@@ -7,7 +7,7 @@
 body
 {
     font-family: "Balthazar", serif;
-    background-image: url(fundo.png);
+    /*background-image: url(fundo.png);*/
 }
 .container
 {
@@ -22,7 +22,7 @@ body
 .toolbar
 {
     width: 100%;
-    height: 100px;
+    height: 100%;
     background-color: white;
 
 }
@@ -91,4 +91,17 @@ body
     padding: auto;
     margin-left: 50px; /* Move 50px para a direita */
     margin-top: 100px;  /* Move 20px para baixo */
+    padding: 190px
+}
+.descricao
+{
+    background-color: #000E32;
+    padding: 180px
+}
+#txt2
+{
+    height: 80px;
+    color: white;
+    padding: auto;
+    padding: 100px
 }
