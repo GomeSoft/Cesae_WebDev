@@ -6,7 +6,7 @@ class Login
     Scanner scanPass = new Scanner(System.in);
     String username = "utilizador";
     String password = "abz";
-    int tentativas = 1;
+    int tentativas = 0;
     Login()
     {
         System.out.println("Username: ");
@@ -17,7 +17,7 @@ class Login
     void dados()
     {
         String user2 =  scanUser.nextLine();
-        String pass2 =  scanUser.nextLine();
+        String pass2 =  scanPass.nextLine();
         if (user2 == username && pass2 == password)
         {
             System.out.println("Acertooouuu MIZEraaaveeeeee");
@@ -25,6 +25,8 @@ class Login
         else
         {
              System.out.println("Erroooouuu MIZEraaaveeeeee");
+             tentativas ++;
+             validacoes();
         }
         
     }
@@ -32,7 +34,7 @@ class Login
     {
         if (tentativas == 3)
         {
-            tentativas ++;
+            
             System.out.println("Foge!");
         }
         else
