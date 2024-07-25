@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=misterio
+comment1.params=
+comment1.target=misterio()
+comment2.params=
+comment2.target=void\ geracao()
+comment3.params=la
+comment3.target=void\ lancamento(int)
+numComments=4
