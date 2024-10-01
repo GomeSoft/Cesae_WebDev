@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Nome:"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editSobrenome"
+        app:layout_constraintEnd_toEndOf="@+id/editSobrenome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+       />
+
+    <EditText
+        android:id="@+id/editSobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Sobrenome:"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Telefone:"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/editMorada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSobrenome"
+         />
+
+    <EditText
+        android:id="@+id/editMorada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Morada:"
+        app:layout_constraintBottom_toTopOf="@+id/editEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email:"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIr"
+        app:layout_constraintEnd_toEndOf="@+id/editMorada"
+        app:layout_constraintTop_toBottomOf="@+id/editMorada" />
+
+    <Button
+        android:id="@+id/buttonIr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editEmail"
+        app:layout_constraintStart_toStartOf="@+id/editEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

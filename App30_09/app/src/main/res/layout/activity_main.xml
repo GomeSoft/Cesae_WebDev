@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Conversor de moedas"
+        android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/editValorEuros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:hint="Valor Euros"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolar"
+             />
+
+        <Button
+            android:id="@+id/button_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="real" />
+
+            <Button
+                android:id="@+id/buttonKZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kwanzas" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/button_libra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Libra" />
+
+                <Button
+                    android:id="@+id/button_franco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Franco" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:text="Desenvolvido por GSS" />
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Marcacao
+comment1.params=
+comment1.target=void\ marcacao()
+comment2.params=
+comment2.target=void\ diasIncSabado()
+comment3.params=
+comment3.target=void\ diasExcSabado()
+comment4.params=
+comment4.target=void\ horario()
+numComments=5
