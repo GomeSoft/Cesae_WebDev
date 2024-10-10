@@ -1,0 +1,52 @@
+1 - R: O Java script serve para criar páginas dinâmicas.
+
+2 - R: De acordo com o que estudamos poderemos utilizar uma variável com p comando "prompt" e a mesma deverá guardar os dados que o usuário digitar, guardar em uma base de dados e posteriormente mostrar.
+
+3-
+	1.1 - F
+	1.2 - V
+	1.3 - F
+	1.4 - V
+	1.5 - Recebe o valor 15
+	1.6 - Não, var dar um erro porque nesse momento do programa o num2 é um inteiro e o num1 é uma string.
+	1.7 - num1 = 1;
+	1.8 - Bolean
+
+4- 
+
+4.1 
+
+passwords.push('cesaewd')
+console.log(passwords)
+
+4.2
+
+if (userPassword == passwords[0]){
+    alert('Acertou Miserave!')
+} else if (userPassword == passwords[1]){
+    alert('Acertou Miserave!')
+} else if (userPassword == passwords[2]){
+    alert('Acertou Miserave!')
+} else if (userPassword == passwords[3]){
+    alert('Acertou Miserave!')
+} else {
+    alert('Errou Miserave!')
+}
+
+4.3
+
+
+5-
+5.1
+studdentGrades. forEach(function(student){
+    (nameAndGrade(student.studentName, student.grade))
+})
+function nameAndGrade(aluno, nota){
+    console.log(`A nota de ${aluno} é ${nota}`)
+}
+
+5.2 - Falso, retorna um erro
+
+5.3 - Verdadeiro
+
+
