@@ -1,31 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-    @php 
-        $myvar = 1;
-        $myname= 2;
+@extends("layouts.femaster");
+
+@section("content")
+    
+    @php
+        $myvar = 'Olá Mundo!'
+        
     @endphp
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{{asset('CSS/style.css')}}">
-</head>
-<body>
-    <img src="{{asset('images/img.jpg')}}" alt="">
-<h5>Olá sou a nossa casa!</h5>
 
-    <p>{{ $myvar }}</p>
-
-    @if ($myname)
-        <p>{{ $myname }}</p>
-    @else
-        <p>Não existe var myname</p>
+    @if($myName)
+        <p>{{$myName}}</p>
+        @else
+        <p>Nome não encontrado</p>
     @endif
+
+    <h5>Olá, essa é a nossa casa</h5>
+    <p>{{$myFirstVar}}</p>
+
+
+
+    <ul>
+        @foreach($weekDays as $day)
+        <li>{{$day}}</li>
+        @endforeach
+    </ul>
+
+    <ul>
+        <h5>Dados do curso</h5>
+        <p>Nome: {{$courseInfo['name']}}</p>
+        <p>Horas: {{$courseInfo['hours']}}</p>
+    </ul>
+
+    
+        <h3>Dados do cesae:</h3>
+        <p>Centro: {{$cesaeInfo['name']}}</p>
+        <p>Endereço: {{$cesaeInfo['address']}}</p>
+        <p>Email: {{$cesaeInfo['email']}}</p>
+        
+    
+
     <ul>
         <li><a href="{{ route('welcome') }}">Welcome</a></li>
         <li><a href="{{ route('users.all') }}">Todos os Users</a></li>
         <li><a href="{{ route('users.add') }}">Adicionar</a></li>
     </ul>
 
-</body>
-</html>
+@endsection
+

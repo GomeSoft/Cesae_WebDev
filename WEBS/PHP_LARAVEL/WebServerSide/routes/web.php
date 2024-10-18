@@ -1,18 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\userController;
+use App\Http\Controllers\IndexController;
+Route::get('/', [IndexController::class, 'welcome'])->name('welcome');
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/home', [IndexController::class, 'home'])->name('homepage');
 
-Route::get('/home', function () {
-    return view('utils.home'); // página definida como página inicial
-})->name('homepage');
-
-Route::get('/users', function () {
-    return view('users.all_users');
-})->name('users.all');
+Route::get('/users', [userController::class, 'users'])->name('users.all');
 
 Route::get('/hello_world/{name}', function($name){
     return '<h1>Hello '.$name.'</h1>';
@@ -30,8 +25,6 @@ Route::fallback(function(){
 
 
 //Exercicio 1
-Route::get('addUsers', function(){
-    return view('users.addUser');
-})->name ('users.add');
+Route::get('/addUsers', [userController::class, 'addUsers'])->name ('users.add');
 
 
