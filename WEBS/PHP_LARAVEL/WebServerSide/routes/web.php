@@ -9,9 +9,9 @@ Route::get('/home', [IndexController::class, 'home'])->name('homepage');
 
 Route::get('/users', [userController::class, 'users'])->name('users.all');
 
-Route::get('/hello_world/{name}', function($name){
-    return '<h1>Hello '.$name.'</h1>';
-});
+// Route::get('/hello_world/{name}', function($name){
+//     return '<h1>Hello '.$name.'</h1>';
+// });
 
 
 
@@ -26,5 +26,7 @@ Route::fallback(function(){
 
 //Exercicio 1
 Route::get('/addUsers', [userController::class, 'addUsers'])->name ('users.add');
+
+Route::get('/users', [userController::class, 'allUsers'])->name ('users.all');
 
 
