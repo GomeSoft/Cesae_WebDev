@@ -13,6 +13,7 @@ Route::get('/users', [userController::class, 'users'])->name('users.all');
 //     return '<h1>Hello '.$name.'</h1>';
 // });
 
+Route::get('insert_user', [userController::class, 'insertUsers'])->name('users.isert');
 
 
 //rota de fallback, onde o user vai quando clica numa rota que não registada
@@ -25,7 +26,7 @@ Route::fallback(function(){
 
 
 //Exercicio 1
-Route::get('/addUsers', [userController::class, 'addUsers'])->name ('users.add');
+Route::get('/addUser', [userController::class, 'addUsers'])->name ('users.add');
 
 Route::get('/users', [userController::class, 'allUsers'])->name ('users.all');
 

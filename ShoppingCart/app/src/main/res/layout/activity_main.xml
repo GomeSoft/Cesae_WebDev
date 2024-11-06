@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".views.MainActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carrinho De Compras"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_novo_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Novo Produto"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_novo_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Codigo de barras"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit_novo_preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Preço"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="2"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/edit_novo_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Peso"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="2"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_adicionar_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:layout_margin="30dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_margin="30dp"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/button_total_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Preço Total" />
+
+    <Button
+        android:id="@+id/button_peso_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Peso Total"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+
+
+</LinearLayout>
